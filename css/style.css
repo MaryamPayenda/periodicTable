@@ -15,15 +15,31 @@ td {
 td:hover {
   transform: scale(1.5);
   border: 1px gray solid;
+  border-radius: 6px;
 }
 
+.noBorder {
+  border: none;
+  transform: none !important;
+}
+.noBorder:hover {
+  transform: none !important;
+  border: none;
+}
+h1 {
+  text-align: center;
+  padding: 10px;
+  font-size: 4vh;
+  background-color: darkgrey;
+}
+/* second table */
 .firstRow:nth-child(1) :nth-child(n + 1) {
   background-color: lightblue;
 }
 .secondSRow:nth-child(2) :nth-child(n + 1) {
   background-color: teal;
 }
-
+/* ----------------------------- */
 tr:nth-child(1) td:nth-child(1) {
   background-color: rgb(231, 245, 35);
 }
@@ -33,33 +49,75 @@ td:nth-child(1) {
 tr:nth-child(n + 2) td:nth-child(2) {
   background-color: rgb(184, 167, 92);
 }
-tr:nth-child(n + 4) td:nth-child(3) {
+tr:nth-child(n + 4) td:nth-child(3),
+tr:nth-child(n + 4) td:nth-child(4),
+tr:nth-child(n + 4) td:nth-child(5),
+tr:nth-child(n + 4) td:nth-child(6),
+tr:nth-child(n + 4) td:nth-child(7),
+tr:nth-child(n + 4) td:nth-child(8),
+tr:nth-child(n + 4) td:nth-child(9),
+tr:nth-child(n + 4) td:nth-child(10),
+tr:nth-child(n + 4) td:nth-child(11),
+tr:nth-child(n + 4) td:nth-child(12) {
   background-color: green;
 }
 tr:nth-child(n + 6) td:nth-child(3) {
   background-color: rgb(75, 150, 163);
 }
-tr:nth-child(n + 4) td:nth-child(4) {
-  background-color: green;
+tr:nth-child(6) :nth-last-child(3),
+tr:nth-child(5) :nth-last-child(3),
+tr:nth-child(5) :nth-last-child(4),
+tr:nth-child(4) :nth-last-child(4),
+tr:nth-child(3) :nth-last-child(5),
+tr:nth-child(4) :nth-last-child(5),
+tr:nth-child(2) :nth-last-child(6) {
+  background-color: rgb(219, 148, 171);
 }
+
+tr:nth-child(3) :nth-last-child(6),
+tr:nth-child(7) :nth-last-child(5),
+tr:nth-child(5) :nth-last-child(5),
+tr:nth-child(6) :nth-last-child(5),
+tr:nth-child(6) :nth-last-child(4),
+tr:nth-child(n + 2) td:nth-child(13),
+tr:nth-last-child(7) :nth-last-child(18) {
+  background-color: pink;
+}
+
+tr:nth-child(2) :nth-last-child(5),
+tr:nth-child(2) :nth-last-child(4),
+tr:nth-child(2) :nth-last-child(3),
+tr:nth-child(3) :nth-last-child(4),
+tr:nth-child(4) :nth-last-child(3),
+tr:nth-child(3) :nth-last-child(3) {
+  background-color: yellow;
+}
+/* tr:nth-child(n + 2) td:nth-child(13) {
+  background-color: orange;
+} */
 
 tr:nth-child(n + 7) td:nth-child(3) {
   background-color: rgb(115, 207, 223);
 }
-
-td:nth-child(n + 15) {
+tr:nth-child(7) :nth-last-child(2) {
   background-color: blue;
 }
+tr:nth-child(7) :nth-last-child(3) {
+  background-color: darkslateblue;
+}
+tr:nth-child(7) :nth-last-child(4) {
+  background-color: rgb(216, 196, 84);
+}
+
+tr:nth-child(7) :nth-last-child(1) {
+  background-color: rgb(245, 236, 186);
+}
+
 td:nth-last-child(1) {
-  background-color: blueviolet;
+  background-color: rgb(65, 48, 161);
 }
-.noBorder {
-  border: none;
-  transform: none;
-}
-h1 {
-  text-align: center;
-  padding: 10px;
-  font-size: 4vh;
-  background-color: darkgrey;
+tr:nth-child(-n + 6) td:nth-child(17),
+tr:nth-child(2) :nth-last-child(2),
+tr:nth-child(3) :nth-last-child(2) {
+  background-color: rgb(223, 174, 128);
 }
